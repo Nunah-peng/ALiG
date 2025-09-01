@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association of Liberians in Gisenyi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <span class="text-3xl font-bold text-green-700">ALiG</span>
+                <span class="text-xl font-semibold text-gray-800 hidden sm:block">Association of Liberians in Gisenyi</span>
+            </a>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop navigation -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="text-gray-600 hover:text-green-700 font-medium transition duration-300">About Us</a></li>
+                <li><a href="#mission" class="text-gray-600 hover:text-green-700 font-medium transition duration-300">Our Mission</a></li>
+                <li><a href="#events" class="text-gray-600 hover:text-green-700 font-medium transition duration-300">Events</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-green-700 font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile menu dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md rounded-b-lg">
+            <ul class="flex flex-col space-y-2 py-2 px-4">
+                <li><a href="#about" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-lg font-medium transition duration-300">About Us</a></li>
+                <li><a href="#mission" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-lg font-medium transition duration-300">Our Mission</a></li>
+                <li><a href="#events" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-lg font-medium transition duration-300">Events</a></li>
+                <li><a href="#contact" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-lg font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center text-white py-24" style="background-image: url('https://scontent.fkgl2-1.fna.fbcdn.net/v/t39.30808-6/474862616_122226638450027476_6829545712898483821_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGL1vIpNorfexwERuuVS4Bj98mpOO5w-4_3yak47nD7j6SyD84O4-zUwcv7MEnKSFkOFP1MHff-Yv6ZTAtky5_y&_nc_ohc=d89LggAiqQsQ7kNvwF2SDFc&_nc_oc=AdkWO97GrGznKjcwaIaBxaz6G44CLjSF3i-_Kq5K7EbSp-satR9HiguykHKLRpjy2a0&_nc_zt=23&_nc_ht=scontent.fkgl2-1.fna&_nc_gid=kft_pmLpfsTE-H2OPwk6Cg&oh=00_AfX--jTg8Ougkal-UoMfYWZ6TJ-EAy2SnXVKZF-Sp2sOfA&oe=68BBB9CD');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+                    Welcome to the Association of Liberians in Gisenyi (ALiG)
+                </h1>
+                <p class="text-lg sm:text-xl max-w-2xl mx-auto mb-8">
+                    Fostering a vibrant community, celebrating our heritage, and supporting one another in Rwanda.
+                </p>
+                <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Join Our Community
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">About Our Association</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            The Association of Liberians in Gisenyi (ALG) was established to create a sense of home and belonging for Liberians residing in the beautiful city of Gisenyi, Rwanda. We are a non-profit organization dedicated to fostering unity, cultural exchange, and mutual support among our members and the local Rwandan community.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Since our founding, we have been a hub for social gatherings, cultural celebrations, and community initiatives, strengthening the bonds of our diaspora. 
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="ALiG logo.jpg" alt="Group of people from the Liberian community" class="rounded-3xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section id="mission" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Our Mission</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Mission Item 1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg transition duration-300 transform hover:scale-105">
+                        <div class="bg-green-100 p-4 rounded-full inline-block mb-4">
+                            <svg class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H8m4-12a9 9 0 100 18A9 9 0 0012 8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2">Community Building</h3>
+                        <p class="text-gray-600">
+                            To foster a strong, united, and supportive community for all Liberians in Gisenyi.
+                        </p>
+                    </div>
+                    <!-- Mission Item 2 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg transition duration-300 transform hover:scale-105">
+                        <div class="bg-blue-100 p-4 rounded-full inline-block mb-4">
+                            <svg class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2S9 11.105 9 10s1.343-2 3-2zM12 21.2a1 1 0 01-.8-.4l-5.4-5.4c-2.6-2.6-2.6-6.8 0-9.4a6.6 6.6 0 019.4 0c2.6 2.6 2.6 6.8 0 9.4l-5.4 5.4a1 1 0 01-.8.4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2">Cultural Preservation</h3>
+                        <p class="text-gray-600">
+                            To celebrate and preserve the rich cultural heritage of Liberia through events and education.
+                        </p>
+                    </div>
+                    <!-- Mission Item 3 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-lg transition duration-300 transform hover:scale-105">
+                        <div class="bg-red-100 p-4 rounded-full inline-block mb-4">
+                            <svg class="h-10 w-10 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2">Support & Advocacy</h3>
+                        <p class="text-gray-600">
+                            To provide a network of support and a voice for Liberian nationals in Gisenyi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">Upcoming Events</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event Card 1 -->
+                    <div class="bg-gray-50 rounded-3xl shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                        <img src="Let's Talk Gisenyi.jpg" alt="Let's Talk Gisenyi" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Let's Talk Gisenyi</h3>
+                            <p class="text-gray-600 mb-4">Join us every first and last Saturday as we bring together guests and panelists on our platform to discuss educational issues and engage in interactive conversations about today’s world. .</p>
+                            <span class="text-sm font-semibold text-green-600">Date: September 2025 - June 2026</span>
+                        </div>
+                    </div>
+                    <!-- Event Card 2 -->
+                    <div class="bg-gray-50 rounded-3xl shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                        <img src="Membership outreach.jpg" alt="Membership OutReach" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Monthly Community Outreach</h3>
+                            <p class="text-gray-600 mb-4">As leadership and as a community, we believe that everyone’s presence should be acknowledged and valued. It is also important for us to understand what is considered respectful and unoffending within our community. We will reach out to all members, inviting them to come together to share their thoughts, express concerns, and engage in meaningful conversations, both on community matters and personal experiences.</p>
+                            <span class="text-sm font-semibold text-green-600">Date: October 2025</span>
+                        </div>
+                    </div>
+                    <!-- Event Card 3 -->
+                    <div class="bg-gray-50 rounded-3xl shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                        <img src="Meetings (Executives & General).jpg" alt="Meetings" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Meetings (Executives & General)</h3>
+                            <p class="text-gray-600 mb-4">Meetings both executive and general are powerful leadership tools when managed effectively. They foster clarity, strengthen communication, drive decisions, motivate teams, and promote accountability. However, their impact depends on strong leadership, leaders who ensure meetings are purposeful, inclusive, and action-oriented rather than routine time wasters. For this reason, we believe it is wise to hold them on a quarterly basis as per our by-laws..</p>
+                            <span class="text-sm font-semibold text-green-600">Date: October, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">Previous Events</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event Card 1 -->
+                    <div class="bg-gray-50 rounded-3xl shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                        <img src="Liberian Independence Day Celebration.jpg" alt="Liberian Independence Day Celebration" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Liberian Independence Day Celebration</h3>
+                            <p class="text-gray-600 mb-4">On July 26, 2025 we celebrated Liberia's 178th Independence Day with indoor and outdoor programs which included debate between both schools the Kigali Independent University (ULK) Gisenyi Campus and University of University of Tourism, Technology and Business Studies (UTB) Gisenyi Campus, with an excellent performances.</p>
+                            <span class="text-sm font-semibold text-green-600">Date: July 26, 2025</span>
+                        </div>
+                    </div>
+                    <!-- Event Card 2 -->
+                    <div class="bg-gray-50 rounded-3xl shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                        <img src="First General Meeting.jpg" alt="General Community Meeting" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">First General Meeting</h3>
+                            <p class="text-gray-600 mb-4">An evening of fun, sharing of ideas, where the leadership share their plan of actions with the community. Ended with a unique refreshment!</p>
+                            <span class="text-sm font-semibold text-green-600">Date: August 3, 2025</span>
+                        </div>
+                    </div>
+                    <!-- Event Card 3 -->
+                    <div class="bg-gray-50 rounded-3xl shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                        <img src="Members Dissertation Defense.jpg" alt="Dissertations Defense" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Members Dissertation Defense</h3>
+                            <p class="text-gray-600 mb-4">Liberians in both universities, successfully defended their dissertation after a years of Studies. The members and leadership of ALiG, show up in celebrating their achievements.</p>
+                            <span class="text-sm font-semibold text-green-600">Date: July to September 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-xl mx-auto text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        We'd love to hear from you. Fill out the form below or reach out to us directly.
+                    </p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-3xl shadow-lg">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:ring-green-500 focus:border-green-500"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Association of Liberians in Gisenyi. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-white transition-colors duration-300">Facebook</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">Youtube</a>
+                <a href="#" class="hover:text-white transition-colors duration-300">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
